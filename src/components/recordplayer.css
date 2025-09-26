@@ -1,0 +1,33 @@
+.record-player {
+  position: relative;
+  display: inline-block;
+}
+.platter {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #333 0%, #000 60%);
+  box-shadow: inset 0 6px 18px rgba(0, 0, 0, 0.6),
+    0 12px 30px rgba(0, 0, 0, 0.6);
+}
+.platter .label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 36%;
+  height: 36%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffd54f 0%, #b58900 60%);
+}
+.arm {
+  position: absolute;
+  width: 50%;
+  height: 6px;
+  right: 10%;
+  top: 14%;
+  background: linear-gradient(90deg, #bbb, #888);
+  transform-origin: left center;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
